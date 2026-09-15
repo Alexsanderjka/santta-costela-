@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santta Costela — Churrasco no bafo, pedido pelo WhatsApp</title>
+<meta name="description" content="Santta Costela: costela no bafo, linguiça assada, frango assado e parmegiana. Monte seu pedido e finalize direto no WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="topo">
+  <div class="wrap header-inner">
+    <a href="#topo" class="brand">
+      <span class="brand-mark">SC</span>
+      <span class="brand-name">Santta<br>Costela</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#como-pedir">Como pedir</a>
+      <a href="#contato">Contato e horário</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" aria-label="Abrir carrinho">
+        <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M3 3h2l1.4 12.6a2 2 0 0 0 2 1.8h8.7a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20.5" r="1.4" fill="currentColor"/><circle cx="17.5" cy="20.5" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <img src="images/hero.jpg" alt="" class="hero-bg" aria-hidden="true">
+  <div id="emberLayer" class="ember-layer" aria-hidden="true"></div>
+
+  <div class="wrap hero-inner">
+    <p class="hero-kicker">Direto da brasa para o seu WhatsApp</p>
+    <h1 class="hero-title">
+      Costela no bafo,<br>
+      feita como <em>tem</em> que ser.
+    </h1>
+    <p class="hero-sub">
+      Escolha os pratos, monte seu pedido no carrinho e finalize a compra
+      falando com a gente pelo WhatsApp. Sem complicação, sem fila.
+    </p>
+    <div class="hero-actions">
+      <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+      <a href="#" id="heroWhatsapp" class="btn btn-ghost" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20Zm4.4-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARDÁPIO ============ -->
+<section class="menu-section" id="cardapio">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Cardápio</h2>
+      <p>Tudo assado devagar, no ponto certo. Escolha e adicione ao carrinho.</p>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"><!-- injetado via JS --></div>
+  </div>
+</section>
+
+<!-- ============ COMO PEDIR ============ -->
+<section class="how-section" id="como-pedir">
+  <div class="wrap how-inner">
+    <div class="section-head">
+      <h2>Como pedir</h2>
+      <p>Três passos e o pedido chega até nós.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step-n">1</span>
+        <h3>Monte seu pedido</h3>
+        <p>Adicione os pratos que quiser no cardápio acima e ajuste as quantidades no carrinho.</p>
+      </li>
+      <li class="step">
+        <span class="step-n">2</span>
+        <h3>Confira o total</h3>
+        <p>O carrinho calcula o valor de tudo automaticamente, sem surpresa na hora de pagar.</p>
+      </li>
+      <li class="step">
+        <span class="step-n">3</span>
+        <h3>Envie pelo WhatsApp</h3>
+        <p>Um clique em "Finalizar pedido" abre o WhatsApp com tudo já escrito para você.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTATO / FOOTER ============ -->
+<footer class="site-footer" id="contato">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">SC</span>
+      <div>
+        <p class="footer-title">Santta Costela</p>
+        <p class="footer-tag">No bafo, na brasa, no capricho.</p>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horário</h4>
+      <p>Terça a domingo<br>18h às 23h</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Endereço</h4>
+      <p>Preencha aqui o endereço<br>do restaurante</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Fale com a gente</h4>
+      <a href="#" id="footerWhatsapp" class="footer-link" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Santta Costela</p>
+</footer>
+
+<!-- ============ CARRINHO (drawer) ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-drawer-head">
+    <h3>Seu pedido</h3>
+    <button id="cartClose" aria-label="Fechar carrinho">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmptyMsg">Seu carrinho está vazio.<br>Escolha algo saboroso no cardápio.</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">R$ 0,00</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn" disabled>
+      Finalizar pedido no WhatsApp
+    </button>
+  </div>
+</aside>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="#" id="floatWhatsapp" class="float-whatsapp" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20Zm4.4-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
